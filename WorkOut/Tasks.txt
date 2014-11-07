@@ -1,6 +1,0 @@
-Additional features needed to be implemented:
-
-- Currently user types the workouts to add a new workout, have a listview avaliable for workouts without making the user type manually.
--Find a Web Api for a workouts website and implement a new table view controller to get the details of differnet workouts like rotten tomatoes example in class(list of workouts with images, instructions,etc). This new controller can be added as a segue from present main view controller.
-- Add some images to the weekly table view for each day
--Also Change the background of the application with some images

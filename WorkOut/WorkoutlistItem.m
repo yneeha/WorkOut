@@ -13,6 +13,7 @@
 @synthesize checked = _checked ;
 
 // given a decoder pull the information out of it
+
 - (id) initWithCoder :( NSCoder *) aDecoder
 {
     if (( self = [ super init ]) ) {
@@ -33,8 +34,5 @@
 {
     self . checked = ! self . checked ;
 }
-
-
-
 
 @end

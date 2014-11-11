@@ -18,4 +18,6 @@
 @property NSDictionary *weekDays;
 @property NSDictionary *weekDaysNotes;
 
+@property (nonatomic, strong) NSMutableArray* images;   //array of images used on cells
+
 @end

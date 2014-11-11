@@ -32,7 +32,12 @@ NSMutableArray * selectedDayNotes;
     [super viewDidLoad];
     [self loadWorkoutlistItems];
     
+    [self.weekList setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)]; //lines between cells won't get cut off from images. got this handy line from stack exchange.
+    
     self.week = [NSMutableArray arrayWithObjects:                  @"Monday",@"Tuesday",@"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday", Nil];
+    
+    self.images = [NSMutableArray arrayWithObjects: @"chair.png",@"cycle.png",@"jog.png",@"jump.png",@"muscle.png",@"stretch.png",@"weightlift.png", Nil];
+    //array of images for each day of the week
 }
 
 
@@ -67,7 +72,10 @@ NSMutableArray * selectedDayNotes;
     }
     
     cell.textLabel.text = [self.week
-                           objectAtIndex:indexPath.row]; 
+                           objectAtIndex:indexPath.row];
+    
+    cell.imageView.image = [UIImage imageNamed:[self.images
+                                                objectAtIndex:indexPath.row]];  //display image in each cell day in the week table
     
     return cell; 
 }

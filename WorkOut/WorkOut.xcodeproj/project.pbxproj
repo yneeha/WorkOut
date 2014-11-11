@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		198619221A12A309002B52D9 /* chair.png in Resources */ = {isa = PBXBuildFile; fileRef = 1986191B1A12A309002B52D9 /* chair.png */; };
+		198619231A12A309002B52D9 /* cycle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1986191C1A12A309002B52D9 /* cycle.png */; };
+		198619241A12A309002B52D9 /* jog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1986191D1A12A309002B52D9 /* jog.png */; };
+		198619251A12A309002B52D9 /* jump.png in Resources */ = {isa = PBXBuildFile; fileRef = 1986191E1A12A309002B52D9 /* jump.png */; };
+		198619261A12A309002B52D9 /* muscle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1986191F1A12A309002B52D9 /* muscle.png */; };
+		198619271A12A309002B52D9 /* stretch.png in Resources */ = {isa = PBXBuildFile; fileRef = 198619201A12A309002B52D9 /* stretch.png */; };
+		198619281A12A309002B52D9 /* weightlift.png in Resources */ = {isa = PBXBuildFile; fileRef = 198619211A12A309002B52D9 /* weightlift.png */; };
 		4B85ED881A0036A50068B73E /* WeekListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B85ED871A0036A50068B73E /* WeekListViewController.m */; };
 		4BAE39EB19FABEAA0075A7A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE39EA19FABEAA0075A7A2 /* main.m */; };
 		4BAE39EE19FABEAA0075A7A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE39ED19FABEAA0075A7A2 /* AppDelegate.m */; };
@@ -31,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1986191B1A12A309002B52D9 /* chair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chair.png; sourceTree = "<group>"; };
+		1986191C1A12A309002B52D9 /* cycle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycle.png; sourceTree = "<group>"; };
+		1986191D1A12A309002B52D9 /* jog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jog.png; sourceTree = "<group>"; };
+		1986191E1A12A309002B52D9 /* jump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jump.png; sourceTree = "<group>"; };
+		1986191F1A12A309002B52D9 /* muscle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = muscle.png; sourceTree = "<group>"; };
+		198619201A12A309002B52D9 /* stretch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stretch.png; sourceTree = "<group>"; };
+		198619211A12A309002B52D9 /* weightlift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weightlift.png; sourceTree = "<group>"; };
 		4B85ED861A0036A50068B73E /* WeekListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekListViewController.h; sourceTree = "<group>"; };
 		4B85ED871A0036A50068B73E /* WeekListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekListViewController.m; sourceTree = "<group>"; };
 		4BAE39E519FABEAA0075A7A2 /* WorkOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +127,13 @@
 		4BAE39E819FABEAA0075A7A2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1986191B1A12A309002B52D9 /* chair.png */,
+				1986191C1A12A309002B52D9 /* cycle.png */,
+				1986191D1A12A309002B52D9 /* jog.png */,
+				1986191E1A12A309002B52D9 /* jump.png */,
+				1986191F1A12A309002B52D9 /* muscle.png */,
+				198619201A12A309002B52D9 /* stretch.png */,
+				198619211A12A309002B52D9 /* weightlift.png */,
 				5E3F58C91A0169CC00A0D084 /* images.jpeg */,
 				4BAE39E919FABEAA0075A7A2 /* Info.plist */,
 				4BAE39EA19FABEAA0075A7A2 /* main.m */,
@@ -217,10 +238,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				198619261A12A309002B52D9 /* muscle.png in Resources */,
+				198619281A12A309002B52D9 /* weightlift.png in Resources */,
+				198619231A12A309002B52D9 /* cycle.png in Resources */,
 				4BAE39F419FABEAA0075A7A2 /* Main.storyboard in Resources */,
 				5E3F58CA1A0169CC00A0D084 /* images.jpeg in Resources */,
+				198619221A12A309002B52D9 /* chair.png in Resources */,
+				198619271A12A309002B52D9 /* stretch.png in Resources */,
+				198619241A12A309002B52D9 /* jog.png in Resources */,
 				4BAE39F919FABEAA0075A7A2 /* LaunchScreen.xib in Resources */,
 				4BAE39F619FABEAA0075A7A2 /* Images.xcassets in Resources */,
+				198619251A12A309002B52D9 /* jump.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WorkOut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -376,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WorkOut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

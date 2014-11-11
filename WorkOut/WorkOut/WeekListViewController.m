@@ -69,6 +69,32 @@ NSMutableArray * selectedDayNotes;
     cell.textLabel.text = [self.week
                            objectAtIndex:indexPath.row]; 
     
+    
+    switch (indexPath.row) {
+        case 0:
+            cell.imageView.image = [UIImage imageNamed:@"monday.png"];
+            break;
+        case 1:
+            cell.imageView.image = [UIImage imageNamed:@"tuesday.png"];
+            break;
+        case 2:
+            cell.imageView.image = [UIImage imageNamed:@"wednesday.png"];
+            break;
+        case 3:
+            cell.imageView.image = [UIImage imageNamed:@"thursday.png"];
+            break;
+        case 4:
+            cell.imageView.image = [UIImage imageNamed:@"friday.png"];
+            break;
+        case 5:
+            cell.imageView.image = [UIImage imageNamed:@"saturday.png"];
+            break;
+        case 6:
+            cell.imageView.image = [UIImage imageNamed:@"sunday.png"];
+            break;
+        default:
+            break;
+}
     return cell; 
 }
 

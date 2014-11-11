@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39208B091A12ABC90009E20D /* friday.png in Resources */ = {isa = PBXBuildFile; fileRef = 39208B021A12ABC90009E20D /* friday.png */; };
+		39208B0A1A12ABC90009E20D /* monday.png in Resources */ = {isa = PBXBuildFile; fileRef = 39208B031A12ABC90009E20D /* monday.png */; };
+		39208B0B1A12ABC90009E20D /* wednesday.png in Resources */ = {isa = PBXBuildFile; fileRef = 39208B041A12ABC90009E20D /* wednesday.png */; };
+		39208B0C1A12ABC90009E20D /* thursday.png in Resources */ = {isa = PBXBuildFile; fileRef = 39208B051A12ABC90009E20D /* thursday.png */; };
+		39208B0D1A12ABC90009E20D /* saturday.png in Resources */ = {isa = PBXBuildFile; fileRef = 39208B061A12ABC90009E20D /* saturday.png */; };
+		39208B0E1A12ABC90009E20D /* tuesday.png in Resources */ = {isa = PBXBuildFile; fileRef = 39208B071A12ABC90009E20D /* tuesday.png */; };
+		39208B0F1A12ABC90009E20D /* sunday.png in Resources */ = {isa = PBXBuildFile; fileRef = 39208B081A12ABC90009E20D /* sunday.png */; };
 		4B85ED881A0036A50068B73E /* WeekListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B85ED871A0036A50068B73E /* WeekListViewController.m */; };
 		4BAE39EB19FABEAA0075A7A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE39EA19FABEAA0075A7A2 /* main.m */; };
 		4BAE39EE19FABEAA0075A7A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE39ED19FABEAA0075A7A2 /* AppDelegate.m */; };
@@ -31,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39208B021A12ABC90009E20D /* friday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friday.png; sourceTree = "<group>"; };
+		39208B031A12ABC90009E20D /* monday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monday.png; sourceTree = "<group>"; };
+		39208B041A12ABC90009E20D /* wednesday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wednesday.png; sourceTree = "<group>"; };
+		39208B051A12ABC90009E20D /* thursday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thursday.png; sourceTree = "<group>"; };
+		39208B061A12ABC90009E20D /* saturday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saturday.png; sourceTree = "<group>"; };
+		39208B071A12ABC90009E20D /* tuesday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuesday.png; sourceTree = "<group>"; };
+		39208B081A12ABC90009E20D /* sunday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunday.png; sourceTree = "<group>"; };
 		4B85ED861A0036A50068B73E /* WeekListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekListViewController.h; sourceTree = "<group>"; };
 		4B85ED871A0036A50068B73E /* WeekListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekListViewController.m; sourceTree = "<group>"; };
 		4BAE39E519FABEAA0075A7A2 /* WorkOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +85,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39208B011A12ABBC0009E20D /* Weekday Images */ = {
+			isa = PBXGroup;
+			children = (
+				39208B031A12ABC90009E20D /* monday.png */,
+				39208B071A12ABC90009E20D /* tuesday.png */,
+				39208B041A12ABC90009E20D /* wednesday.png */,
+				39208B051A12ABC90009E20D /* thursday.png */,
+				39208B021A12ABC90009E20D /* friday.png */,
+				39208B061A12ABC90009E20D /* saturday.png */,
+				39208B081A12ABC90009E20D /* sunday.png */,
+			);
+			name = "Weekday Images";
+			sourceTree = "<group>";
+		};
 		4BAE39DC19FABEAA0075A7A2 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +144,7 @@
 				5E3F58C91A0169CC00A0D084 /* images.jpeg */,
 				4BAE39E919FABEAA0075A7A2 /* Info.plist */,
 				4BAE39EA19FABEAA0075A7A2 /* main.m */,
+				39208B011A12ABBC0009E20D /* Weekday Images */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -217,10 +246,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39208B0B1A12ABC90009E20D /* wednesday.png in Resources */,
+				39208B0E1A12ABC90009E20D /* tuesday.png in Resources */,
+				39208B091A12ABC90009E20D /* friday.png in Resources */,
 				4BAE39F419FABEAA0075A7A2 /* Main.storyboard in Resources */,
+				39208B0C1A12ABC90009E20D /* thursday.png in Resources */,
 				5E3F58CA1A0169CC00A0D084 /* images.jpeg in Resources */,
 				4BAE39F919FABEAA0075A7A2 /* LaunchScreen.xib in Resources */,
 				4BAE39F619FABEAA0075A7A2 /* Images.xcassets in Resources */,
+				39208B0F1A12ABC90009E20D /* sunday.png in Resources */,
+				39208B0A1A12ABC90009E20D /* monday.png in Resources */,
+				39208B0D1A12ABC90009E20D /* saturday.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

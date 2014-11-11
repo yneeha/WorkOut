@@ -17,9 +17,11 @@
 
 @end
 
-@interface AddItemViewController : UITableViewController
+@interface AddItemViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@property (weak, nonatomic) IBOutlet UIPickerView *workoutPicker;
 
-@property (weak, nonatomic) IBOutlet UITextField *workoutText;
+
 @property (nonatomic,weak) id<AddItemViewControllerDelegate> delegate;
 
 @end
+

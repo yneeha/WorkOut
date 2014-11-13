@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "WorkoutlistItem.h"
+#import "WorkOutSelectionList.h"
 @class AddItemViewController;
 @protocol AddItemViewControllerDelegate <NSObject>
 
@@ -17,9 +18,9 @@
 
 @end
 
-@interface AddItemViewController : UITableViewController
+@interface AddItemViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITextField *workoutText;
+@property (weak, nonatomic) IBOutlet UIPickerView *workoutPicker;
 @property (nonatomic,weak) id<AddItemViewControllerDelegate> delegate;
 
 @end

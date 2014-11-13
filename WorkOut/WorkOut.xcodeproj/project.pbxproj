@@ -18,6 +18,8 @@
 		4BAE3A1419FAC9800075A7A2 /* WorkoutlistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE3A1319FAC9800075A7A2 /* WorkoutlistItem.m */; };
 		5E3F58CA1A0169CC00A0D084 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5E3F58C91A0169CC00A0D084 /* images.jpeg */; };
 		61B0C41419FEDE1200A7F509 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B0C41319FEDE1200A7F509 /* AddItemViewController.m */; };
+		D3A06EA71A12E8A2005E9A80 /* WorkOutList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3A06EA61A12E8A2005E9A80 /* WorkOutList.plist */; };
+		D3A06EAA1A12EAC3005E9A80 /* WorkOutSelectionList.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A06EA91A12EAC3005E9A80 /* WorkOutSelectionList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		5E3F58C91A0169CC00A0D084 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		61B0C41219FEDE1200A7F509 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
 		61B0C41319FEDE1200A7F509 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
+		D3A06EA61A12E8A2005E9A80 /* WorkOutList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WorkOutList.plist; sourceTree = "<group>"; };
+		D3A06EA81A12EAC3005E9A80 /* WorkOutSelectionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkOutSelectionList.h; sourceTree = "<group>"; };
+		D3A06EA91A12EAC3005E9A80 /* WorkOutSelectionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkOutSelectionList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,7 @@
 		4BAE39DC19FABEAA0075A7A2 = {
 			isa = PBXGroup;
 			children = (
+				D3A06EA61A12E8A2005E9A80 /* WorkOutList.plist */,
 				4BAE39E719FABEAA0075A7A2 /* WorkOut */,
 				4BAE3A0119FABEAB0075A7A2 /* WorkOutTests */,
 				4BAE39E619FABEAA0075A7A2 /* Products */,
@@ -106,6 +112,8 @@
 				4BAE39F519FABEAA0075A7A2 /* Images.xcassets */,
 				4BAE39F719FABEAA0075A7A2 /* LaunchScreen.xib */,
 				4BAE39E819FABEAA0075A7A2 /* Supporting Files */,
+				D3A06EA81A12EAC3005E9A80 /* WorkOutSelectionList.h */,
+				D3A06EA91A12EAC3005E9A80 /* WorkOutSelectionList.m */,
 			);
 			path = WorkOut;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BAE39F419FABEAA0075A7A2 /* Main.storyboard in Resources */,
+				D3A06EA71A12E8A2005E9A80 /* WorkOutList.plist in Resources */,
 				5E3F58CA1A0169CC00A0D084 /* images.jpeg in Resources */,
 				4BAE39F919FABEAA0075A7A2 /* LaunchScreen.xib in Resources */,
 				4BAE39F619FABEAA0075A7A2 /* Images.xcassets in Resources */,
@@ -244,6 +253,7 @@
 				4BAE3A1419FAC9800075A7A2 /* WorkoutlistItem.m in Sources */,
 				61B0C41419FEDE1200A7F509 /* AddItemViewController.m in Sources */,
 				4BAE39EB19FABEAA0075A7A2 /* main.m in Sources */,
+				D3A06EAA1A12EAC3005E9A80 /* WorkOutSelectionList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WorkOut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -376,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WorkOut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

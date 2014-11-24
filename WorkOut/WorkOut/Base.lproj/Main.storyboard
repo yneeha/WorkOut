@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6CH-Pb-5Cv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6CH-Pb-5Cv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--Workout Weekly-->
@@ -97,63 +97,6 @@
             </objects>
             <point key="canvasLocation" x="2507" y="499"/>
         </scene>
-        <!--Add Item View Controller-->
-        <scene sceneID="WfI-VC-04o">
-            <objects>
-                <tableViewController id="JDB-Yp-QOD" customClass="AddItemViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="zc0-pU-uSo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <sections>
-                            <tableViewSection id="CUp-Kp-ScF">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="z76-uY-yQD">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z76-uY-yQD" id="rJd-dj-fif">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Workout Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NEH-0f-INx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                                                    <connections>
-                                                        <action selector="Save:" destination="JDB-Yp-QOD" eventType="editingDidEndOnExit" id="nEq-m5-dVz"/>
-                                                    </connections>
-                                                </textField>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="JDB-Yp-QOD" id="MFc-2R-IiS"/>
-                            <outlet property="delegate" destination="JDB-Yp-QOD" id="BaP-u5-Hbl"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="vZr-wh-NV8">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="KY2-3X-9iI">
-                            <connections>
-                                <action selector="Cancel:" destination="JDB-Yp-QOD" id="jAN-uJ-Snu"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="Ojd-gu-LbJ">
-                            <connections>
-                                <action selector="Save:" destination="JDB-Yp-QOD" id="6Vh-bl-jJY"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="workoutText" destination="NEH-0f-INx" id="c4g-YJ-OFS"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IEv-nu-Qag" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3963" y="498"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="e3y-Zv-uWr">
             <objects>
@@ -166,12 +109,72 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="JDB-Yp-QOD" kind="relationship" relationship="rootViewController" id="cnh-Ba-k5p"/>
+                        <segue destination="leL-SK-nIo" kind="relationship" relationship="rootViewController" id="6Ll-zx-dad"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfB-jQ-1nW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3151" y="500"/>
+        </scene>
+        <!--Add Item View Controller-->
+        <scene sceneID="5X1-OW-01J">
+            <objects>
+                <viewController id="leL-SK-nIo" customClass="AddItemViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hVs-CC-6tI"/>
+                        <viewControllerLayoutGuide type="bottom" id="hfV-t6-8KU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jDH-pa-rwW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GqT-Ic-l5E">
+                                <rect key="frame" x="0.0" y="199" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="leL-SK-nIo" id="FLY-fe-wrn"/>
+                                    <outlet property="delegate" destination="leL-SK-nIo" id="U3u-5g-YVF"/>
+                                </connections>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mWx-dr-flS">
+                                <rect key="frame" x="40" y="131" width="228" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Workout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4A-7n-Erc">
+                                <rect key="frame" x="105" y="84" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or Select From Below" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liz-if-GQb">
+                                <rect key="frame" x="76" y="187" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dxO-K2-s9h">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="tNv-52-psT">
+                            <connections>
+                                <action selector="Cancel:" destination="leL-SK-nIo" id="eNo-VK-e3a"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="yMx-Jt-cfw">
+                            <connections>
+                                <action selector="Save:" destination="leL-SK-nIo" id="0Tz-s7-GbA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mytextField" destination="mWx-dr-flS" id="Rrl-8k-dQA"/>
+                        <outlet property="workoutPicker" destination="GqT-Ic-l5E" id="u7O-H1-inO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJG-Is-WYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3647" y="504"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JSS-0G-vqE">

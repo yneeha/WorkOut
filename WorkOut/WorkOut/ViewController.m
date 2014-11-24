@@ -21,16 +21,16 @@
 - (void)viewDidLoad {
     
     [ super viewDidLoad ];
-  //  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"images.jpeg"]];
-//    
-//    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-//    [formatter setDateFormat:@"yyyy-MM-dd HH:mm"];
-//    NSDate *todaysDate = [NSDate date];
-//    
-//    NSLog(@"%@: %@",[formatter stringFromDate:todaysDate], self.notesTextView.text);
-
+    //  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"images.jpeg"]];
+    //
+    //    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    //    [formatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+    //    NSDate *todaysDate = [NSDate date];
+    //
+    //    NSLog(@"%@: %@",[formatter stringFromDate:todaysDate], self.notesTextView.text);
+    
     if(_notes.count>0)
-     _notesTextView.text=[_notes objectAtIndex:0];
+        _notesTextView.text=[_notes objectAtIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +48,7 @@
 {
     // section has a single row
     return [ _items count ];
-
+    
 }
 
 //sections headings
@@ -78,13 +78,13 @@
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
     return cell ;
-
+    
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-  WorkoutlistItem * item = [_items objectAtIndex:indexPath.row];
+    WorkoutlistItem * item = [_items objectAtIndex:indexPath.row];
     [item toggleChecked];
     if(cell.accessoryType ==UITableViewCellAccessoryNone){
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -93,7 +93,7 @@
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-   // [self saveWorkoutlistItems];
+    // [self saveWorkoutlistItems];
 }
 
 - (IBAction) addItem :(id) sender {
@@ -102,17 +102,25 @@
     item.text = [NSString stringWithFormat:@"I'm new, and number %d", newRowIndex];
     item.checked = NO;
     [self.tableView reloadData];
-  
+    
     
     
 }
 
 - ( void ) tableView :( UITableView *) tableView commitEditingStyle :(UITableViewCellEditingStyle ) editingStyle forRowAtIndexPath :(NSIndexPath *) indexPath
 {
-    // remove the cell
-    [ _items removeObjectAtIndex : indexPath.row ];
+    // delete a workout that was added
     
-    [ tableView reloadData ];
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        //add code to delete
+        
+        //if(deletedObject){
+        //[deletedObject deleteInBackground];
+        [self.items removeObjectAtIndex:[indexPath row]];
+        [self.tableView reloadData];
+    }
+    
 }
 
 - ( void ) addItemViewController :( AddItemViewController *) controller
@@ -123,7 +131,7 @@
     NSIndexPath * indexPath = [ NSIndexPath indexPathForRow : newRowIndex                                          inSection :0];
     
     NSArray * indexPaths = [ NSArray arrayWithObject : indexPath ];
-   
+    
     // this simply tells the table that one new element has appeared
     // if it is in the view then changes are animated ( possibly )
     // if the object is our of view then the table doesn ’t change visually
@@ -132,6 +140,9 @@
     // dismiss our modal view we are done with it
     [self dismissViewControllerAnimated : YES completion : nil ];
 }
+
+
+
 
 - (void)viewWillDisappear:(BOOL)animated
 {

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6CH-Pb-5Cv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6CH-Pb-5Cv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Workout Weekly-->
@@ -35,7 +36,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Workout Weekly" id="fQs-Rg-osj"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Workout Weekly" id="fQs-Rg-osj">
+                        <barButtonItem key="rightBarButtonItem" title="Locate" id="1eN-GA-YwL">
+                            <connections>
+                                <segue destination="JKK-vm-zWa" kind="push" id="nbE-15-ObM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="WeekList" destination="xBp-w3-bll" id="Bl0-dO-TCm"/>
                         <segue destination="Ybg-Y1-5tM" kind="push" identifier="toWorkoutList" id="fJq-cx-Tgb"/>
@@ -193,6 +202,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJr-O5-6d1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1501" y="484"/>
+        </scene>
+        <!--Address View Controller-->
+        <scene sceneID="fMJ-26-N5R">
+            <objects>
+                <viewController id="JKK-vm-zWa" customClass="AddressViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Qr-m2-dBH"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ZD-bG-b8w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CBE-jN-Zni">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-xY-rNl">
+                                <rect key="frame" x="85" y="99" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63G-k9-3gH">
+                                <rect key="frame" x="12" y="147" width="297" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JKK-vm-zWa" id="m5b-Il-Yzk"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsp-Ej-d9b">
+                                <rect key="frame" x="123" y="223" width="74" height="33"/>
+                                <color key="backgroundColor" red="0.95294123890000004" green="0.56078433989999998" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Map It">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eAh-tO-7nq" kind="push" identifier="map" id="okD-4e-sd1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3X2-yq-e7f"/>
+                    <connections>
+                        <outlet property="_addressTF" destination="63G-k9-3gH" id="KZh-SK-t9g"/>
+                        <outlet property="_mapButton" destination="dsp-Ej-d9b" id="aHr-0l-ffL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ze2-Qy-xQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951" y="1041"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="0Uu-k2-NIa">
+            <objects>
+                <viewController id="eAh-tO-7nq" customClass="CSEMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YbM-gz-tDg"/>
+                        <viewControllerLayoutGuide type="bottom" id="jDs-Q3-zbm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MwU-c9-khu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qZe-WH-FCd">
+                                <rect key="frame" x="0.0" y="63" width="320" height="416"/>
+                                <connections>
+                                    <outlet property="delegate" destination="eAh-tO-7nq" id="Q36-Pb-7Sr"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F7f-AE-8sA"/>
+                    <connections>
+                        <outlet property="mapView" destination="qZe-WH-FCd" id="js9-dB-dzk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNS-UH-VeT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2353" y="1041"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

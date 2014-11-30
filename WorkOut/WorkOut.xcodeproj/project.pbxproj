@@ -24,6 +24,8 @@
 		4BAE3A0519FABEAB0075A7A2 /* WorkOutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE3A0419FABEAB0075A7A2 /* WorkOutTests.m */; };
 		4BAE3A1419FAC9800075A7A2 /* WorkoutlistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE3A1319FAC9800075A7A2 /* WorkoutlistItem.m */; };
 		5E3F58CA1A0169CC00A0D084 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5E3F58C91A0169CC00A0D084 /* images.jpeg */; };
+		5ED299C81A2B9F1C000D0C84 /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED299C51A2B9F1C000D0C84 /* AddressViewController.m */; };
+		5ED299C91A2B9F1C000D0C84 /* CSEMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED299C71A2B9F1C000D0C84 /* CSEMapViewController.m */; };
 		61B0C41419FEDE1200A7F509 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B0C41319FEDE1200A7F509 /* AddItemViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,10 @@
 		4BAE3A1219FAC9800075A7A2 /* WorkoutlistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutlistItem.h; path = ../WorkoutlistItem.h; sourceTree = "<group>"; };
 		4BAE3A1319FAC9800075A7A2 /* WorkoutlistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutlistItem.m; path = ../WorkoutlistItem.m; sourceTree = "<group>"; };
 		5E3F58C91A0169CC00A0D084 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		5ED299C41A2B9F1C000D0C84 /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		5ED299C51A2B9F1C000D0C84 /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		5ED299C61A2B9F1C000D0C84 /* CSEMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSEMapViewController.h; sourceTree = "<group>"; };
+		5ED299C71A2B9F1C000D0C84 /* CSEMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSEMapViewController.m; sourceTree = "<group>"; };
 		61B0C41219FEDE1200A7F509 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
 		61B0C41319FEDE1200A7F509 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +112,10 @@
 		4BAE39E719FABEAA0075A7A2 /* WorkOut */ = {
 			isa = PBXGroup;
 			children = (
+				5ED299C41A2B9F1C000D0C84 /* AddressViewController.h */,
+				5ED299C51A2B9F1C000D0C84 /* AddressViewController.m */,
+				5ED299C61A2B9F1C000D0C84 /* CSEMapViewController.h */,
+				5ED299C71A2B9F1C000D0C84 /* CSEMapViewController.m */,
 				4BAE3A1219FAC9800075A7A2 /* WorkoutlistItem.h */,
 				4BAE3A1319FAC9800075A7A2 /* WorkoutlistItem.m */,
 				4BAE39EC19FABEAA0075A7A2 /* AppDelegate.h */,
@@ -267,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BAE39F119FABEAA0075A7A2 /* ViewController.m in Sources */,
+				5ED299C91A2B9F1C000D0C84 /* CSEMapViewController.m in Sources */,
+				5ED299C81A2B9F1C000D0C84 /* AddressViewController.m in Sources */,
 				4BAE39EE19FABEAA0075A7A2 /* AppDelegate.m in Sources */,
 				4B85ED881A0036A50068B73E /* WeekListViewController.m in Sources */,
 				4BAE3A1419FAC9800075A7A2 /* WorkoutlistItem.m in Sources */,

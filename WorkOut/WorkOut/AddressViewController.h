@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface AddressViewController : UIViewController<UITextFieldDelegate>
+@interface AddressViewController : UIViewController<UITextFieldDelegate, MFMailComposeViewControllerDelegate>
 {
     
     IBOutlet UITextField *_addressTF;
     IBOutlet UIButton *_mapButton;
+    IBOutlet UITextField *_emailTF;
 }
+
+- (IBAction)sendEmail:(id)sender;
 
 @end

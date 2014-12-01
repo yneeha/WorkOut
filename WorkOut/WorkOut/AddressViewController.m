@@ -10,7 +10,9 @@
 #import "CSEMapViewController.h"
 
 @interface AddressViewController ()
-
+{
+    MFMailComposeViewController *_mailComposerl;
+}
 @end
 
 @implementation AddressViewController
@@ -31,6 +33,7 @@
     self.title = @"Find Location";
     
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,6 +58,43 @@
         CSEMapViewController *dest = [segue destinationViewController];
         dest.address = _addressTF.text;
     }
+}
+
+- (IBAction)sendEmail:(id)sender
+{
+    //ye device
+    if ([MFMailComposeViewController canSendMail])
+    {
+        NSLog(@"Please try again after setting up an account.");
+        
+        return;
+    }
+    
+    // Email Subject
+    NSString *emailTitle = @"Test Email";
+    
+    // Email Content
+    NSString *messageBody = @"iOS programming is so fun!";
+    
+    if (!_emailTF.text || [_emailTF.text isEqualToString:@""])
+        return;
+    
+    // To address
+    NSArray *toRecipents = [NSArray arrayWithObject:_emailTF.text];
+    
+    _mailComposerl = [[MFMailComposeViewController alloc] init];
+    _mailComposerl.mailComposeDelegate = self;
+    [_mailComposerl setSubject:emailTitle];
+    [_mailComposerl setMessageBody:messageBody isHTML:NO];
+    [_mailComposerl setToRecipients:toRecipents];
+    // Present mail view controller on screen
+    [self presentViewController:_mailComposerl animated:YES completion:NULL];
+}
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller
+           didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end

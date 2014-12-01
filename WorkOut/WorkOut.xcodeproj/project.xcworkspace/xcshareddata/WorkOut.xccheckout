@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>64CE79D7-6F44-4988-817E-2B1C9AC5ACB1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WorkOut</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4F42601D7D59ADD753CDC16B0ADCCFC35F9640BE</key>
+		<string>https://github.com/asharm64/WorkOut-1.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WorkOut/WorkOut.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4F42601D7D59ADD753CDC16B0ADCCFC35F9640BE</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/asharm64/WorkOut-1.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4F42601D7D59ADD753CDC16B0ADCCFC35F9640BE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4F42601D7D59ADD753CDC16B0ADCCFC35F9640BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WorkOut-1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

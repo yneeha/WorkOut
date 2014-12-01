@@ -24,6 +24,14 @@
 		4BAE3A0519FABEAB0075A7A2 /* WorkOutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE3A0419FABEAB0075A7A2 /* WorkOutTests.m */; };
 		4BAE3A1419FAC9800075A7A2 /* WorkoutlistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE3A1319FAC9800075A7A2 /* WorkoutlistItem.m */; };
 		5E3F58CA1A0169CC00A0D084 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5E3F58C91A0169CC00A0D084 /* images.jpeg */; };
+		5ED299C81A2B9F1C000D0C84 /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED299C51A2B9F1C000D0C84 /* AddressViewController.m */; };
+		5ED299C91A2B9F1C000D0C84 /* CSEMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED299C71A2B9F1C000D0C84 /* CSEMapViewController.m */; };
+		5ED4AA321A2CDCCA00DFD536 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED4AA311A2CDCCA00DFD536 /* MessageUI.framework */; };
+		5ED4AA341A2CDCF600DFD536 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED4AA331A2CDCF600DFD536 /* CoreLocation.framework */; };
+		5ED4AA361A2CDD0C00DFD536 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED4AA351A2CDD0C00DFD536 /* MapKit.framework */; };
+		5ED4AA381A2CDD1700DFD536 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED4AA371A2CDD1700DFD536 /* UIKit.framework */; };
+		5ED4AA3A1A2CDD2200DFD536 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED4AA391A2CDD2200DFD536 /* Foundation.framework */; };
+		5ED4AA3C1A2CDD3300DFD536 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED4AA3B1A2CDD3300DFD536 /* CoreGraphics.framework */; };
 		61B0C41419FEDE1200A7F509 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B0C41319FEDE1200A7F509 /* AddItemViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +71,16 @@
 		4BAE3A1219FAC9800075A7A2 /* WorkoutlistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutlistItem.h; path = ../WorkoutlistItem.h; sourceTree = "<group>"; };
 		4BAE3A1319FAC9800075A7A2 /* WorkoutlistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutlistItem.m; path = ../WorkoutlistItem.m; sourceTree = "<group>"; };
 		5E3F58C91A0169CC00A0D084 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		5ED299C41A2B9F1C000D0C84 /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		5ED299C51A2B9F1C000D0C84 /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		5ED299C61A2B9F1C000D0C84 /* CSEMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSEMapViewController.h; sourceTree = "<group>"; };
+		5ED299C71A2B9F1C000D0C84 /* CSEMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSEMapViewController.m; sourceTree = "<group>"; };
+		5ED4AA311A2CDCCA00DFD536 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		5ED4AA331A2CDCF600DFD536 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5ED4AA351A2CDD0C00DFD536 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5ED4AA371A2CDD1700DFD536 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5ED4AA391A2CDD2200DFD536 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5ED4AA3B1A2CDD3300DFD536 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		61B0C41219FEDE1200A7F509 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
 		61B0C41319FEDE1200A7F509 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +90,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED4AA3C1A2CDD3300DFD536 /* CoreGraphics.framework in Frameworks */,
+				5ED4AA3A1A2CDD2200DFD536 /* Foundation.framework in Frameworks */,
+				5ED4AA381A2CDD1700DFD536 /* UIKit.framework in Frameworks */,
+				5ED4AA361A2CDD0C00DFD536 /* MapKit.framework in Frameworks */,
+				5ED4AA341A2CDCF600DFD536 /* CoreLocation.framework in Frameworks */,
+				5ED4AA321A2CDCCA00DFD536 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +112,12 @@
 		4BAE39DC19FABEAA0075A7A2 = {
 			isa = PBXGroup;
 			children = (
+				5ED4AA3B1A2CDD3300DFD536 /* CoreGraphics.framework */,
+				5ED4AA391A2CDD2200DFD536 /* Foundation.framework */,
+				5ED4AA371A2CDD1700DFD536 /* UIKit.framework */,
+				5ED4AA351A2CDD0C00DFD536 /* MapKit.framework */,
+				5ED4AA331A2CDCF600DFD536 /* CoreLocation.framework */,
+				5ED4AA311A2CDCCA00DFD536 /* MessageUI.framework */,
 				4BAE39E719FABEAA0075A7A2 /* WorkOut */,
 				4BAE3A0119FABEAB0075A7A2 /* WorkOutTests */,
 				4BAE39E619FABEAA0075A7A2 /* Products */,
@@ -106,6 +136,10 @@
 		4BAE39E719FABEAA0075A7A2 /* WorkOut */ = {
 			isa = PBXGroup;
 			children = (
+				5ED299C41A2B9F1C000D0C84 /* AddressViewController.h */,
+				5ED299C51A2B9F1C000D0C84 /* AddressViewController.m */,
+				5ED299C61A2B9F1C000D0C84 /* CSEMapViewController.h */,
+				5ED299C71A2B9F1C000D0C84 /* CSEMapViewController.m */,
 				4BAE3A1219FAC9800075A7A2 /* WorkoutlistItem.h */,
 				4BAE3A1319FAC9800075A7A2 /* WorkoutlistItem.m */,
 				4BAE39EC19FABEAA0075A7A2 /* AppDelegate.h */,
@@ -267,6 +301,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BAE39F119FABEAA0075A7A2 /* ViewController.m in Sources */,
+				5ED299C91A2B9F1C000D0C84 /* CSEMapViewController.m in Sources */,
+				5ED299C81A2B9F1C000D0C84 /* AddressViewController.m in Sources */,
 				4BAE39EE19FABEAA0075A7A2 /* AppDelegate.m in Sources */,
 				4B85ED881A0036A50068B73E /* WeekListViewController.m in Sources */,
 				4BAE3A1419FAC9800075A7A2 /* WorkoutlistItem.m in Sources */,

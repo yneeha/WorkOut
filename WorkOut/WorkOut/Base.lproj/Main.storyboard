@@ -38,7 +38,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Workout Weekly" id="fQs-Rg-osj">
-                        <barButtonItem key="rightBarButtonItem" title="Locate" id="1eN-GA-YwL">
+                        <barButtonItem key="rightBarButtonItem" title="Features" id="1eN-GA-YwL">
                             <connections>
                                 <segue destination="JKK-vm-zWa" kind="push" id="nbE-15-ObM"/>
                             </connections>
@@ -216,12 +216,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-xY-rNl">
-                                <rect key="frame" x="85" y="99" width="150" height="21"/>
+                                <rect key="frame" x="85" y="80" width="150" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63G-k9-3gH">
-                                <rect key="frame" x="12" y="147" width="297" height="30"/>
+                                <rect key="frame" x="5" y="110" width="220" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -229,7 +229,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsp-Ej-d9b">
-                                <rect key="frame" x="123" y="223" width="74" height="33"/>
+                                <rect key="frame" x="235" y="107" width="74" height="33"/>
                                 <color key="backgroundColor" red="0.95294123890000004" green="0.56078433989999998" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Map It">
@@ -241,13 +241,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIs-C2-TrQ">
-                                <rect key="frame" x="137" y="264" width="47" height="21"/>
+                                <rect key="frame" x="137" y="169" width="47" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OHQ-2M-dss">
-                                <rect key="frame" x="16" y="293" width="272" height="30"/>
+                                <rect key="frame" x="5" y="198" width="220" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -255,7 +255,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm1-JJ-eqc">
-                                <rect key="frame" x="123" y="371" width="74" height="33"/>
+                                <rect key="frame" x="235" y="196" width="74" height="33"/>
                                 <color key="backgroundColor" red="0.95294123890000004" green="0.56078433989999998" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Send">

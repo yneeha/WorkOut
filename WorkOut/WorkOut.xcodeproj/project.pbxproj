@@ -14,6 +14,17 @@
 		198619261A12A309002B52D9 /* muscle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1986191F1A12A309002B52D9 /* muscle.png */; };
 		198619271A12A309002B52D9 /* stretch.png in Resources */ = {isa = PBXBuildFile; fileRef = 198619201A12A309002B52D9 /* stretch.png */; };
 		198619281A12A309002B52D9 /* weightlift.png in Resources */ = {isa = PBXBuildFile; fileRef = 198619211A12A309002B52D9 /* weightlift.png */; };
+		1E0873C21A2EE6550024B8E0 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0873C11A2EE6550024B8E0 /* DetailsViewController.m */; };
+		1E0873C81A2EE68F0024B8E0 /* AirBike.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E0873C31A2EE68F0024B8E0 /* AirBike.txt */; };
+		1E0873C91A2EE68F0024B8E0 /* Crunches.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E0873C41A2EE68F0024B8E0 /* Crunches.txt */; };
+		1E0873CA1A2EE68F0024B8E0 /* Decline PushUps.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E0873C51A2EE68F0024B8E0 /* Decline PushUps.txt */; };
+		1E0873CB1A2EE68F0024B8E0 /* ExerciseBall Pull-In.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E0873C61A2EE68F0024B8E0 /* ExerciseBall Pull-In.txt */; };
+		1E0873CC1A2EE68F0024B8E0 /* Yoga.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1E0873C71A2EE68F0024B8E0 /* Yoga.txt */; };
+		1E0873CE1A2EE6A80024B8E0 /* workouts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E0873CD1A2EE6A80024B8E0 /* workouts.plist */; };
+		1E0873D71A2EE6E80024B8E0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0873D01A2EE6E80024B8E0 /* LoginViewController.m */; };
+		1E0873D81A2EE6E80024B8E0 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0873D21A2EE6E80024B8E0 /* SignupViewController.m */; };
+		1E0873D91A2EE6E80024B8E0 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0873D41A2EE6E80024B8E0 /* WelcomeViewController.m */; };
+		1E0873DA1A2EE6E80024B8E0 /* WorkoutGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0873D61A2EE6E80024B8E0 /* WorkoutGuideViewController.m */; };
 		4B85ED881A0036A50068B73E /* WeekListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B85ED871A0036A50068B73E /* WeekListViewController.m */; };
 		4BAE39EB19FABEAA0075A7A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE39EA19FABEAA0075A7A2 /* main.m */; };
 		4BAE39EE19FABEAA0075A7A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE39ED19FABEAA0075A7A2 /* AppDelegate.m */; };
@@ -53,6 +64,22 @@
 		1986191F1A12A309002B52D9 /* muscle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = muscle.png; sourceTree = "<group>"; };
 		198619201A12A309002B52D9 /* stretch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stretch.png; sourceTree = "<group>"; };
 		198619211A12A309002B52D9 /* weightlift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weightlift.png; sourceTree = "<group>"; };
+		1E0873C01A2EE6550024B8E0 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		1E0873C11A2EE6550024B8E0 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		1E0873C31A2EE68F0024B8E0 /* AirBike.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AirBike.txt; sourceTree = "<group>"; };
+		1E0873C41A2EE68F0024B8E0 /* Crunches.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Crunches.txt; sourceTree = "<group>"; };
+		1E0873C51A2EE68F0024B8E0 /* Decline PushUps.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Decline PushUps.txt"; sourceTree = "<group>"; };
+		1E0873C61A2EE68F0024B8E0 /* ExerciseBall Pull-In.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ExerciseBall Pull-In.txt"; sourceTree = "<group>"; };
+		1E0873C71A2EE68F0024B8E0 /* Yoga.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yoga.txt; sourceTree = "<group>"; };
+		1E0873CD1A2EE6A80024B8E0 /* workouts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = workouts.plist; sourceTree = "<group>"; };
+		1E0873CF1A2EE6E80024B8E0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		1E0873D01A2EE6E80024B8E0 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1E0873D11A2EE6E80024B8E0 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		1E0873D21A2EE6E80024B8E0 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		1E0873D31A2EE6E80024B8E0 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		1E0873D41A2EE6E80024B8E0 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		1E0873D51A2EE6E80024B8E0 /* WorkoutGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutGuideViewController.h; sourceTree = "<group>"; };
+		1E0873D61A2EE6E80024B8E0 /* WorkoutGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutGuideViewController.m; sourceTree = "<group>"; };
 		4B85ED861A0036A50068B73E /* WeekListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekListViewController.h; sourceTree = "<group>"; };
 		4B85ED871A0036A50068B73E /* WeekListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekListViewController.m; sourceTree = "<group>"; };
 		4BAE39E519FABEAA0075A7A2 /* WorkOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +163,8 @@
 		4BAE39E719FABEAA0075A7A2 /* WorkOut */ = {
 			isa = PBXGroup;
 			children = (
+				1E0873C01A2EE6550024B8E0 /* DetailsViewController.h */,
+				1E0873C11A2EE6550024B8E0 /* DetailsViewController.m */,
 				5ED299C41A2B9F1C000D0C84 /* AddressViewController.h */,
 				5ED299C51A2B9F1C000D0C84 /* AddressViewController.m */,
 				5ED299C61A2B9F1C000D0C84 /* CSEMapViewController.h */,
@@ -144,15 +173,29 @@
 				4BAE3A1319FAC9800075A7A2 /* WorkoutlistItem.m */,
 				4BAE39EC19FABEAA0075A7A2 /* AppDelegate.h */,
 				4BAE39ED19FABEAA0075A7A2 /* AppDelegate.m */,
+				1E0873CD1A2EE6A80024B8E0 /* workouts.plist */,
 				4BAE39EF19FABEAA0075A7A2 /* ViewController.h */,
 				4BAE39F019FABEAA0075A7A2 /* ViewController.m */,
 				61B0C41219FEDE1200A7F509 /* AddItemViewController.h */,
+				1E0873CF1A2EE6E80024B8E0 /* LoginViewController.h */,
+				1E0873D01A2EE6E80024B8E0 /* LoginViewController.m */,
+				1E0873D11A2EE6E80024B8E0 /* SignupViewController.h */,
+				1E0873D21A2EE6E80024B8E0 /* SignupViewController.m */,
+				1E0873D31A2EE6E80024B8E0 /* WelcomeViewController.h */,
+				1E0873D41A2EE6E80024B8E0 /* WelcomeViewController.m */,
+				1E0873D51A2EE6E80024B8E0 /* WorkoutGuideViewController.h */,
+				1E0873D61A2EE6E80024B8E0 /* WorkoutGuideViewController.m */,
 				61B0C41319FEDE1200A7F509 /* AddItemViewController.m */,
 				4BAE39F219FABEAA0075A7A2 /* Main.storyboard */,
 				4B85ED861A0036A50068B73E /* WeekListViewController.h */,
 				4B85ED871A0036A50068B73E /* WeekListViewController.m */,
 				4BAE39F519FABEAA0075A7A2 /* Images.xcassets */,
 				4BAE39F719FABEAA0075A7A2 /* LaunchScreen.xib */,
+				1E0873C31A2EE68F0024B8E0 /* AirBike.txt */,
+				1E0873C41A2EE68F0024B8E0 /* Crunches.txt */,
+				1E0873C51A2EE68F0024B8E0 /* Decline PushUps.txt */,
+				1E0873C61A2EE68F0024B8E0 /* ExerciseBall Pull-In.txt */,
+				1E0873C71A2EE68F0024B8E0 /* Yoga.txt */,
 				4BAE39E819FABEAA0075A7A2 /* Supporting Files */,
 			);
 			path = WorkOut;
@@ -272,17 +315,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E0873C81A2EE68F0024B8E0 /* AirBike.txt in Resources */,
 				198619261A12A309002B52D9 /* muscle.png in Resources */,
 				198619281A12A309002B52D9 /* weightlift.png in Resources */,
+				1E0873CA1A2EE68F0024B8E0 /* Decline PushUps.txt in Resources */,
 				198619231A12A309002B52D9 /* cycle.png in Resources */,
 				4BAE39F419FABEAA0075A7A2 /* Main.storyboard in Resources */,
+				1E0873CC1A2EE68F0024B8E0 /* Yoga.txt in Resources */,
 				5E3F58CA1A0169CC00A0D084 /* images.jpeg in Resources */,
 				198619221A12A309002B52D9 /* chair.png in Resources */,
 				198619271A12A309002B52D9 /* stretch.png in Resources */,
+				1E0873C91A2EE68F0024B8E0 /* Crunches.txt in Resources */,
+				1E0873CE1A2EE6A80024B8E0 /* workouts.plist in Resources */,
 				198619241A12A309002B52D9 /* jog.png in Resources */,
 				4BAE39F919FABEAA0075A7A2 /* LaunchScreen.xib in Resources */,
 				4BAE39F619FABEAA0075A7A2 /* Images.xcassets in Resources */,
 				198619251A12A309002B52D9 /* jump.png in Resources */,
+				1E0873CB1A2EE68F0024B8E0 /* ExerciseBall Pull-In.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,8 +353,13 @@
 				5ED299C91A2B9F1C000D0C84 /* CSEMapViewController.m in Sources */,
 				5ED299C81A2B9F1C000D0C84 /* AddressViewController.m in Sources */,
 				4BAE39EE19FABEAA0075A7A2 /* AppDelegate.m in Sources */,
+				1E0873D81A2EE6E80024B8E0 /* SignupViewController.m in Sources */,
+				1E0873D91A2EE6E80024B8E0 /* WelcomeViewController.m in Sources */,
+				1E0873D71A2EE6E80024B8E0 /* LoginViewController.m in Sources */,
+				1E0873DA1A2EE6E80024B8E0 /* WorkoutGuideViewController.m in Sources */,
 				4B85ED881A0036A50068B73E /* WeekListViewController.m in Sources */,
 				4BAE3A1419FAC9800075A7A2 /* WorkoutlistItem.m in Sources */,
+				1E0873C21A2EE6550024B8E0 /* DetailsViewController.m in Sources */,
 				61B0C41419FEDE1200A7F509 /* AddItemViewController.m in Sources */,
 				4BAE39EB19FABEAA0075A7A2 /* main.m in Sources */,
 			);

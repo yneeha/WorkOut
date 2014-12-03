@@ -63,7 +63,7 @@
 - (IBAction)sendEmail:(id)sender
 {
     //ye device
-    if (![MFMailComposeViewController canSendMail])
+    if ([MFMailComposeViewController canSendMail])
     {
         NSLog(@"Please try again after setting up an account.");
         

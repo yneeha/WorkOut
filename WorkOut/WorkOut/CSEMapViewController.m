@@ -8,16 +8,22 @@
 
 #import "CSEMapViewController.h"
 
+@interface CSEMapViewController ()
+{
+    BOOL _isRouteMapped;
+}
+@end
+
 @implementation CSEMapViewController
 
-@synthesize address, location, locationManager;
+@synthesize address, location, locationManager, coordinate, boundingMapRect;
 
 - (void)viewDidLoad {
     
     self.title = @"Location";
     
     self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
     self.locationManager.delegate = self;
     [self.locationManager startUpdatingLocation];
 }
@@ -109,11 +115,11 @@
 /*!
  *Get address of current location and adding annotation to it
  */
-- (void)getCurrentLocationAddress:(CLLocation *)location
+- (void)getCurrentLocationAddress:(CLLocation *)loc
 {
     
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
-    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+    [geocoder reverseGeocodeLocation:loc completionHandler:^(NSArray *placemarks, NSError *error) {
         NSLog(@"Finding address");
         if (error) {
             NSLog(@"Error %@", error.description);
@@ -177,6 +183,21 @@
     renderer.lineWidth = 5.0;
     renderer.strokeColor = [UIColor purpleColor];
     return renderer;
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation *recentLocation = [locations lastObject];
+
+    //Draw the route when get the current location of device through location manager
+    if (!_isRouteMapped)
+    {
+        _isRouteMapped = true;
+        
+        [self processAddress:self.address];
+    }
+    
+    NSLog(@"Recent Location : %@", recentLocation);
 }
 
 @end
